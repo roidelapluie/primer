@@ -17,7 +17,7 @@ body {
 
 a {
   color: $brand-purple;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover,
   &:active {

@@ -33,6 +33,10 @@ body {
   overflow: visible;
 }
 
+.masthead a,
+h2 a, h1 a, h3 a, .menu a {
+text-decoration: none;
+}
 
 //
 // Custom button
