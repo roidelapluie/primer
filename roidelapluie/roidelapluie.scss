@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", $body-font;
+  font-family: "Open Sans", $body-font;
   font-size: 1rem;
 }
 
@@ -27,6 +27,29 @@ body {
   max-width: 1020px;
   padding-left: 20px;
   padding-right: 20px;
+}
+  @media (min-width: 1200px) {
+
+      body > hr {
+        visibility: hidden;
+      }
+      footer{
+        border-top: none;
+      }
+
+body > .container, .prefooter .container, footer .container {
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  box-shadow: 5px 5px 0px rgb(180,180,180);
+  border: 1px solid rgb(170,170,170);
+}
+
+body{
+    background-color: rgb(200,200,200);
+}
 }
 
 .markdown-body {
@@ -202,15 +225,20 @@ text-decoration: none;
   margin-top: 3rem;
   line-height: 1.75;
   color: #7a7a7a;
-  border-top: 1px solid #eee;
 }
+
+  @media (max-width: 1200px) {
+.prefooter, .footer {
+  border-top: 1px solid #eee;
+
+  }
+  }
 .footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-top: 3rem;
   line-height: 1.75;
   color: #7a7a7a;
-  border-top: 1px solid #eee;
 }
 
 
@@ -280,6 +308,7 @@ text-decoration: none;
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 15px;
   }
 
   // Flex table
